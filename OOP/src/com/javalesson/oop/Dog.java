@@ -7,7 +7,7 @@ public class Dog {
     public static final int TAIL = 1;
     private String name;
     private String breed;
-    private Size size;
+    private Size size = Size.UNDEFINED;
 //    private String size;
 
     public Dog() {
@@ -18,16 +18,17 @@ public class Dog {
     public static int getDogsCount() {
         return dogsCount;
     }
+
     public Size getSize() {
         return size;
-   }
+    }
 
 //    public String getSize() {
 //        return size;
 //    }
 
     public void setSize(Size size) {
-
+        this.size = size;
 
     }
 
@@ -58,14 +59,31 @@ public class Dog {
     }
 
     public void bark() {
-        if ("Big".equalsIgnoreCase(size)) {
+        switch (size) {
+            case BIG:
+            case VERY_BIG:
+                System.out.println("Wof -Wof");
+                break;
+            case AVARAGE:
+                System.out.println("Raf-Raf");
+                break;
+            case SMALL:
+            case VERY_SMALL:
+                System.out.println("Tiaf-Tiaf");
+                break;
+            default:
+                System.out.println("Dog's size undefined");
+        }
+
+
+       /* if ("Big".equalsIgnoreCase(size)) {
             System.out.println("Wof -Wof");
         }
         if ("Average".equalsIgnoreCase(size)) {
             System.out.println("Raf-Raf");
         } else {
             System.out.println("Tiaf-Tiaf");
-        }
+        }*/
 
     }
 
