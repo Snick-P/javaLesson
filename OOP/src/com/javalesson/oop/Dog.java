@@ -57,17 +57,16 @@ public class Dog {
         this.breed = breed;
     }
 
-    public void bark() {
-        if ("Big".equalsIgnoreCase(size)) {
-            System.out.println("Wof -Wof");
-        }
-        if ("Average".equalsIgnoreCase(size)) {
-            System.out.println("Raf-Raf");
-        } else {
-            System.out.println("Tiaf-Tiaf");
-        }
+//    public void bark() {
+//        if ("Big".equalsIgnoreCase(size)) {
+//            System.out.println("Wof -Wof");
+//        }
+//        if ("Average".equalsIgnoreCase(size)) {
+//            System.out.println("Raf-Raf");
+//        } else {
+//            System.out.println("Tiaf-Tiaf");
+//        }
 
-    }
 
     public void bite() {
         if (dogsCount > 2) {
