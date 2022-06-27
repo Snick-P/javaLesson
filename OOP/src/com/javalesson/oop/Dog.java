@@ -71,11 +71,10 @@ public class Dog {
             case VERY_SMALL:
                 System.out.println("Tiaf-Tiaf");
                 break;
-<<<<<<<<< Temporary merge branch 1
-=========
+
             default:
                 System.out.println("Dog's size undefined");
->>>>>>>>> Temporary merge branch 2
+
         }
 
 
