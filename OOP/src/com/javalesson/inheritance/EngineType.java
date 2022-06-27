@@ -1,4 +1,7 @@
 package com.javalesson.inheritance;
 
-public class EngineType {
-}
+    public enum EngineType {
+        PETROL, DIESEL, ELICTRIC
+    };
+
+
