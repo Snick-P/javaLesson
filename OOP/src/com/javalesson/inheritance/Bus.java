@@ -4,8 +4,8 @@ public class Bus extends FuelAuto {
 
     private int passangersNumber;
 
-    public Bus(String producer, String model, EngineType engineType, int availablePatrol, int tankVolume, int passangersNumber) {
-        super(producer, model, engineType, availablePatrol, tankVolume);
+    public Bus(String producer, String model, Engine engine, int availablePatrol, int tankVolume, int passangersNumber) {
+        super(producer, model, engine, availablePatrol, tankVolume);
         this.passangersNumber = passangersNumber;
         System.out.println("Bus was initialize");
     }
