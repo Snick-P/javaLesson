@@ -31,12 +31,9 @@ public class Bus extends FuelAuto {
     }
 
     @Override
-    public void fuelUp(int patrolVolume) {
-        int volume = getAvailablePatrol() + patrolVolume;
-        if(volume>getTankVolume()){
-            setAvailablePatrol(getTankVolume());
-        }
-        System.out.println("Adding DIESEL");
+    public void energize() {
+        fuelUp(getTankVolume()-getAvailablePatrol());
+            System.out.println("Adding DIESEL");
     }
 
     public int getPassangersNumber() {
