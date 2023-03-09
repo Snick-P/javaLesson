@@ -1,6 +1,6 @@
 package com.javalesson.interfaces;
 
-public class Pizza implements Deliverable, Orderable {
+public class Pizza implements Priceble {
     private String name;
     private int quantity;
     private int price;

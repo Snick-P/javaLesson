@@ -1,6 +1,6 @@
 package com.javalesson.interfaces;
 
-public abstract class Electronics implements Deliverable, Orderable {
+public abstract class Electronics implements Priceble {
     private String make;
     private String model;
     private int quantity;
